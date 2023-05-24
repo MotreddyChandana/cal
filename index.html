@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.calculater.com</title>
+    <style>
+       body{
+            background: url(calbg.avif);
+             background-image: url(bgca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:rgb(0, 2, 6);
+  font-size: 15px;
+  font-style: oblique;
+        }
+        digital calculate{
+            border: whitesmoke 1px solid;
+            width: 400px;
+            border-radius: 10px;
+            height:600px;
+        }
+        button{
+            border-radius: 15px;
+            height:50px;
+            width:50px;
+            background-color: rgb(246, 142, 199);
+        }
+        button:hover{
+            transform: scale(2);
+        }
+        input{
+             margin-left: 250px;
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  margin-right: 250px;
+        }
+h1{
+ margin-left: 300px;
+}
+        
+        
+    </style>
+</head>
+<body><center>
+    <h2><u>--**digital caluculater**--</u></h2>
+    <div class="digital calculate"></div>
+    <input type="text" id="result" readonly placeholder="type"><br></br>
+    <tabel>
+        <tr>
+            <td><button class="button" onclick="appendNumber('7')">7</button></td>
+            <td><button class="button" onclick="appendNumber('8')">8</button></td>
+            <td><button class="button" onclick="appendNumber('9')">9</button></td>
+            <td><button  class="button" onclick="setOperator('+')">+</button></td>
+        </tr><br></br>
+        <tr>
+            <td><button  class="button" onclick="appendNumber('6')">6</button></td>
+            <td><button  class="button" onclick="appendNumber('5')">5</button></td>
+            <td><button  class="button" onclick="appendNumber('4')">4</button></td>
+            <td><button class="button" onclick="setOperator('-')">-</button></td>
+
+        </tr><br></br>
+        <tr>
+            <td><button  class="button" onclick="appendNumber('3')">3</button></td>
+            <td><button  class="button" onclick="appendNumber('2')">2</button></td>
+            <td><button class="button" onclick="appendNumber('1')">1</button></td>
+            <td><button class="button" onclick="setOperator('*')">*</button></td>
+        </tr><br></br>
+        <tr>
+            <td><button  class="button" onclick="appendNumber('0')">0</button></td>
+            <td><button  class="button" onclick="clearResult('c')">c</button></td>
+            <td><button class="button" onclick="calculate('=')">=</button></td>
+            <td><button  class="button" onclick="setOperator('/')">/</button></td>
+        </tr><br></br></center>
+    </tabel>
+
+</div>
+<script src="digca.js"></script>
+</body>
+</html>
